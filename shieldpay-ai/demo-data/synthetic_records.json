@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "timestamp": "2026-09-30T10:15:00",
+    "scamCategory": "Account Suspension / Impersonation",
+    "amount": 1999.00,
+    "paymentMethod": "UPI",
+    "sender": "+91 XXXXXXX210",
+    "senderType": "Unknown Person",
+    "riskScore": 91,
+    "riskLevel": "HIGH",
+    "confidence": "HIGH",
+    "message": "Your bank account will be blocked today. Call customer support immediately and pay ₹1,999 to verify your account.",
+    "signals": [
+      { "name": "Account Threat", "severity": "HIGH", "score": 20 },
+      { "name": "Urgent Language", "severity": "HIGH", "score": 10 },
+      { "name": "Payment Request", "severity": "HIGH", "score": 20 },
+      { "name": "Advance Fee", "severity": "HIGH", "score": 20 },
+      { "name": "Unknown Sender", "severity": "MEDIUM", "score": 10 }
+    ]
+  },
+  {
+    "id": 2,
+    "timestamp": "2026-09-30T09:40:00",
+    "scamCategory": "Fake Refund via QR",
+    "amount": 4999.00,
+    "paymentMethod": "UPI",
+    "sender": "nodal-refund@upi.org",
+    "senderType": "Customer Support",
+    "riskScore": 85,
+    "riskLevel": "HIGH",
+    "confidence": "HIGH",
+    "message": "Dear Customer, an excess transaction refund of ₹4,999 is approved. Scan this QR code and enter your UPI PIN to instantly receive the refund.",
+    "signals": [
+      { "name": "Reverse-Charge Deception", "severity": "HIGH", "score": 25 },
+      { "name": "Fake Refund", "severity": "MEDIUM", "score": 15 },
+      { "name": "Credential Request", "severity": "HIGH", "score": 25 }
+    ]
+  },
+  {
+    "id": 3,
+    "timestamp": "2026-09-29T18:22:00",
+    "scamCategory": "Prize / Lottery Scam",
+    "amount": 499.00,
+    "paymentMethod": "UPI",
+    "sender": "lucky-winner@promo.biz",
+    "senderType": "Unknown Person",
+    "riskScore": 80,
+    "riskLevel": "HIGH",
+    "confidence": "HIGH",
+    "message": "Congratulations! You have been selected as the 1st prize winner of ₹50,000 in our Annual Diwali Lucky Draw! Pay ₹499 registration fee immediately to claim your prize.",
+    "signals": [
+      { "name": "Prize / Reward Claim", "severity": "MEDIUM", "score": 15 },
+      { "name": "Advance Fee", "severity": "HIGH", "score": 20 },
+      { "name": "Urgent Language", "severity": "HIGH", "score": 10 }
+    ]
+  },
+  {
+    "id": 4,
+    "timestamp": "2026-09-29T14:10:00",
+    "scamCategory": "Fake Shopping Storefront",
+    "amount": 12999.00,
+    "paymentMethod": "UPI",
+    "sender": "flash-deals@shopping.in",
+    "senderType": "Business",
+    "riskScore": 78,
+    "riskLevel": "HIGH",
+    "confidence": "HIGH",
+    "message": "Mega Warehouse Clearance! Brand new iPhone 15 Pro for only ₹12,999 (90% off)! Order at http://192.168.1.105/apple-deal.",
+    "signals": [
+      { "name": "IP-based Destination", "severity": "HIGH", "score": 25 },
+      { "name": "Insecure Protocol (HTTP)", "severity": "HIGH", "score": 15 },
+      { "name": "Urgent Language", "severity": "HIGH", "score": 10 }
+    ]
+  },
+  {
+    "id": 5,
+    "timestamp": "2026-09-29T11:05:00",
+    "scamCategory": "Credential Harvesting",
+    "amount": 28000.00,
+    "paymentMethod": "Card",
+    "sender": "+91 XXXXXXX550",
+    "senderType": "Customer Support",
+    "riskScore": 95,
+    "riskLevel": "HIGH",
+    "confidence": "HIGH",
+    "message": "URGENT: Transaction of ₹28,000 pending. If not done by you, share the 6-digit OTP received on your mobile immediately to cancel.",
+    "signals": [
+      { "name": "Credential Request", "severity": "HIGH", "score": 25 },
+      { "name": "Urgent Language", "severity": "HIGH", "score": 10 },
+      { "name": "Impersonation Language", "severity": "MEDIUM", "score": 15 }
+    ]
+  },
+  {
+    "id": 6,
+    "timestamp": "2026-09-28T16:30:00",
+    "scamCategory": "Legitimate Bill Reminder",
+    "amount": 840.00,
+    "paymentMethod": "Bank Transfer",
+    "sender": "STATE-POWER-CORP",
+    "senderType": "Business",
+    "riskScore": 10,
+    "riskLevel": "LOW",
+    "confidence": "LOW",
+    "message": "Dear Consumer, your electricity bill of ₹840 for account #102938 is generated and due on 15 Oct. Please pay via your registered electricity provider portal.",
+    "signals": [
+      { "name": "Payment Request", "severity": "LOW", "score": 10 }
+    ]
+  }
+]
